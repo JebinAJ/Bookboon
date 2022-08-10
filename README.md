@@ -11,7 +11,7 @@ Changes made:
 - Removed args.
 
 Task 3 (deployment-svc.yaml)
-After fixing this yaml deployment, create an svc file working with this deployment. It needs to give access to Cerebro GUI after running a "kubectl port-forward svc" command.
+A new service file is created which interact with deployment file. Tested using minikube and successfully accessed ato Cerebro GUI 
 
 Task 4
 A shell script is writen in bookboon.sh which gives logs as Bookboon test and it is called inside Dockerfile.
