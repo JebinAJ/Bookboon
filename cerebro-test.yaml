@@ -95,12 +95,11 @@ metadata:
     app: cerebro
   name: cerebro-gui-test 
 spec:
+  type: LoadBalancer
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 9000
+    - port: 80
+      targetPort: 9000
+      nodePort: 30000
   selector:
     app: cerebro
-  sessionAffinity: None
-  type: NodePort
         
